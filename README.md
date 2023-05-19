@@ -12,3 +12,15 @@ What is JavaScript?
 
 - When V8 compiles JavaScript code, the parser generates an abstract syntax tree. A syntax tree is a tree representation of the syntactic structure of the JavaScript code. Ignition, the interpreter, generates bytecode from this syntax tree. TurboFan, the optimizing compiler, eventually takes the bytecode and generates optimized machine code from it.
 
+-------------------
+Dynamic Typing
+-------------------
+- Where the interpreter assigns variables a type at runtime based on the variable's value at the time.
+- napi_value --> this is an opaque pointer that is used to represent a JavaScript value.
+***
+typedef struct {
+  void* reserved;
+} napi_value;
+***
+- A void pointer is a pointer that has no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type. 
+
