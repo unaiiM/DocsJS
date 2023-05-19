@@ -8,7 +8,7 @@ What is JavaScript?
 - Interpreter --> directly executes the source code of a program line by line. It reads each instruction, translates it into machine code or bytecode, and immediately executes it.
 - JIT --> combines features of both interpreters and compilers. While is interpreting the code at the run time, it dynamically compiles code during runtime, translating parts of the code into machine code or bytecode just before they are executed. The compiled code is then cached and reused for subsequent executions. Determines the most frequently used code and compiles it for better optimitzation.
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20191021114256/881.pnghttps://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZIH_wjqDfZn6NRKsDi9mvA.png" width="600">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20191021114256/881.png" width="600">
 
 <img src="https://marcradziwill.com/assets/images/blog/mastering-javascript-high-performance/V8-pipeline.jpg-800w.avif" width="600">
 
