@@ -7,4 +7,4 @@ What is JavaScript?
 - The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
 - JIT --> executing computer code that involves compilation during execution of a program (at run time) rather than before execution.
 
-<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZIH_wjqDfZn6NRKsDi9mvA.png" width="200">
+<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZIH_wjqDfZn6NRKsDi9mvA.png" width="600">
