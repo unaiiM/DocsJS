@@ -5,7 +5,8 @@ What is JavaScript?
 - JavaScript has almost nothing to do with the programming language named Java. The similar name was inspired by marketing.
 - JavaScript is a high-level, often JavaScript engines are just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions.
 - The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
-- JIT --> executing computer code that involves compilation during execution of a program (at run time) rather than before execution.
+- Interpreter --> directly executes the source code of a program line by line. It reads each instruction, translates it into machine code or bytecode, and immediately executes it.
+- JIT --> combines features of both interpreters and compilers. It dynamically compiles code during runtime, translating parts of the code into machine code or bytecode just before they are executed. The compiled code is then cached and reused for subsequent executions. Determines the most frequently used code and compiles it for better optimitzation.
 
 <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*ZIH_wjqDfZn6NRKsDi9mvA.png" width="600">
 
