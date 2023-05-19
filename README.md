@@ -17,10 +17,10 @@ Dynamic Typing
 -------------------
 - Where the interpreter assigns variables a type at runtime based on the variable's value at the time.
 - napi_value --> this is an opaque pointer that is used to represent a JavaScript value.
-
+```
 typedef struct {
   void* reserved;
 } napi_value;
-
+```
 - A void pointer is a pointer that has no associated data type with it. A void pointer can hold address of any type and can be typecasted to any type. 
 
