@@ -101,3 +101,8 @@ Prototype-based programming is a style of object-oriented programming in which b
 First-class citizensis --> an entity which supports all the operations generally available to other entities. 
 
 First-class functions --> if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures.
+
+----------------
+Basic Concepts
+----------------
+Primitive --> (primitive value, primitive data type) is data that is not an object and has no methods or properties.
