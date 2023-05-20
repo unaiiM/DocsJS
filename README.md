@@ -38,6 +38,18 @@ typedef struct {
 -------------------
 Object-Oriented language
 -------------------
+OOPs refers to languages that use objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+OOPs Concepts:
+- Class
+- Objects
+- Data Abstraction 
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Dynamic Binding
+- Message Passing
+
 Inheritance --> focuses on the hierarchy and code reuse aspect by allowing subclasses to inherit properties and behaviors from a superclass. 
 ```
 class Animal {
