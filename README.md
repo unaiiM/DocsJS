@@ -38,6 +38,8 @@ typedef struct {
 -------------------
 Object-Oriented language
 -------------------
+Programming --> are a way to classify programming languages based on their features. Languages can be classified into multiple paradigms.
+
 OOPs refers to languages that use objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
 OOPs Concepts:
@@ -91,3 +93,7 @@ class Circle extends Shape {
   }
 }
 ```
+
+Imperative programming focuses on specifying instructions and controlling the flow of execution, while OOP focuses on modeling the problem domain using objects and their interactions.
+
+Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of reusing existing objects that serve as prototypes. 
