@@ -97,3 +97,7 @@ class Circle extends Shape {
 Imperative programming focuses on specifying instructions and controlling the flow of execution, while OOP focuses on modeling the problem domain using objects and their interactions.
 
 Prototype-based programming is a style of object-oriented programming in which behaviour reuse (known as inheritance) is performed via a process of reusing existing objects that serve as prototypes. 
+
+First-class citizensis --> an entity which supports all the operations generally available to other entities. 
+
+First-class functions --> if it treats functions as first-class citizens. This means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures.
