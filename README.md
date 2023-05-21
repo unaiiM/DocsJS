@@ -111,3 +111,8 @@ First-class functions --> if it treats functions as first-class citizens. This m
 Basic Concepts
 ----------------
 Primitive --> (primitive value, primitive data type) is data that is not an object and has no methods or properties.
+
+JavaScript is case-sensitive and uses the Unicode character set. That means we can use unicode chars to define variables like `ü`:
+```
+const Früh = "foobar";
+```
