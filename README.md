@@ -10,6 +10,11 @@ Understanding concepts
 -------------------
 - ECMAScript --> is the standard who defines the rules of how JavaScript works with the code. JavaScript uses the ECMAScript standard to undestenad the js code.
 - Interpreter --> directly executes the source code of a program line by line. It reads each instruction, translates it into machine code or bytecode, and immediately executes it.
+- Expression --> is a combination of values, variables, operators, and function calls that can be evaluated to produce a result.
+- Statment --> is an instruction.
+- Statments vs expressions --> an expression is something that computes a value but doesn’t do anything: it doesn’t alter the program state in any way. Statements, on the other hand, don’t have a value (or don’t have a value that we care about), but they do alter the state.
+- Operators --> most common ways to form expressions are operators. Is a symbol or keyword that performs a specific operation on one or more operands and produces a result.
+- Operators --> are the values that the operators works with them.
 - JIT --> combines features of both interpreters and compilers. While is interpreting the code at the run time, it dynamically compiles code during runtime, translating parts of the code into machine code or bytecode just before they are executed. The compiled code is then cached and reused for subsequent executions. Determines the most frequently used code and compiles it for better optimitzation.
 -------------------
 V8 engine
