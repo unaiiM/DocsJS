@@ -1,0 +1,1 @@
+- Methods --> When we combine functions with objects, we get methods.
