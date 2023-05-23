@@ -30,6 +30,54 @@ A literal is a data value that appears directly in the code of a program.
 5 + 5 --> an expressión, is not a literal, the literals will be the two fives
 true  --> boolean literal
 ```
+
+--------------------
+Identifier
+--------------------
+Is simply a name to identify somthing, in javascript are used to name fucntions and variables. 
+
+Must begin with a letter, an underscore (_), or a dollar sign ($)
+
+--------------------
+Reserved Words
+--------------------
+JavaScript reserves a number of identifiers as the keywords of the language itself.
+
+Keep in mind that JavaScript implementations may define other global variables and functions.
+
+--------------------
+Semiclons
+--------------------
+JavaScript treats a line break as a semicolon if the next nonspace character cannot be interpreted as a continuation of the current statement.
+```
+var a 
+a 
+=
+3
+console.log(a)
+```
+JavaScript interprets this code like this; `var a; a = 3; console.log(a)`.
+```
+var y = x + f 
+(a+b).toString()
+```
+`var y = x + f(a+b).toString();`
+
+Exceptions:
+- The return, break, and continue statements --> If a line break appears after any of these words, will always interpret that line break as a semicolon. 
+```
+return 
+true;
+```
+`return; true;`
+- ++ and −− operators --> If you want to use either of these operators as postfix operators, they must appear on the same line as the expression they apply to. Otherwise, the line break will be treated as a semicolon-
+```
+x
+++
+y
+```
+It is parsed as `x; ++y;`, not as `x++; y`.
+
 --------------------
 Basic concepts
 --------------------
