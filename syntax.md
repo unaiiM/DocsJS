@@ -86,3 +86,4 @@ Scope --> the scope is a proprety of the context and depend on his type of block
 - The JavaScript engine starts by checking the current scope for the variable. If the variable is found in the current scope, it is considered declared and accessible.
 - If the variable is not found in the current scope, the JavaScript engine moves to the next outer scope in the scope chain and repeats the process. It continues moving up the scope chain until it either finds the variable or reaches the global scope.
 - If the JavaScript engine reaches the global scope and still doesn't find the variable, it determines that the variable has not been declared.
+The scope is defined when the variable or block begin declared, not called in case of a function. The scope of a function will reach where is defined.
