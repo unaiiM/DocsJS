@@ -102,3 +102,35 @@ Destructuring assignment
 ------------------
 Can declare variables to unpack values from an object.
 For example, `const { bar } = foo`. This will create a variable named bar and assign to it the value corresponding to the key of the same name from object foo.
+
+------------------
+Types, Values, and Variables
+------------------
+Variables --> defines a symbolic name for a value and allows the value to be referred to by name. 
+
+Values --> 
+
+Types --> values that can be represented and manipulated in a programming language are known, fundamental characteristics of a programming language is the set of types it supports.
+- JavaScript types can be divided into two categories: primitive types and object types.
+- Primitive --> number, a string, a boolean, or *null or undefined* (special values).
+- Object --> any javascript value that is not a primitive value is considered an object. Is a collection of properties where each property has a name and a value. Arrays are special object  that represents an ordered collection of numbered values. Another special object are the functions, is an object that has executable code associated with it, that when the function become invoked the executable code are executed to return a computed value. Like arrays, functions behave differently from other kinds of objects, and JavaScript defines a special language syntax for working with them.
+Functions that are written to be used (with the new operator) to initialize a newly created object are known as constructors.
+
+The JavaScript interpreter performs automatic garbage collection for memory management. This means that a program can create objects as needed, when an object is no longer reachable—when a program no longer has any way to refer to it—the interpreter knows it can never be used again and automatically reclaims the memory it was occupying.
+
+JavaScript’s types can be divided into primitive types and object types. And they can be divided into types with methods and types without. They can also be categorized as mutable and immutable types.
+Mutable --> values can be modified or changed after they are created.
+```
+let arr = [2, 3, 4];
+arr[0] = 4; // H -> B
+console.log(arr) // 4, 3, 4;
+```
+Immutable --> values cannot be changed after they are created. (Numbers, booleans, null, undefined and strings)
+```
+let str = "Hello";
+str[0] = "B"; // H -> B
+console.log(str) // Hello;
+```
+
+JavaScript converts values liberally from one type to another. If a program expects a string, for example, and you give it a number, it will automatically convert the number to a string for you.
+JavaScript variables are untyped: you can assign a value of any type to a variable, and you can later assign a value of a different type to the same variable. 
