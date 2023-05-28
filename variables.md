@@ -134,3 +134,86 @@ console.log(str) // Hello;
 
 JavaScript converts values liberally from one type to another. If a program expects a string, for example, and you give it a number, it will automatically convert the number to a string for you.
 JavaScript variables are untyped: you can assign a value of any type to a variable, and you can later assign a value of a different type to the same variable. 
+
+---------------
+Numbers
+---------------
+JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point 
+values. JavaScript represents numbers using the 64-bit floating-point format.
+
+Integer Literals --> are numbers without any fractional or decimal part.
+Base 10 (decimal literal) --> as a sequence of digits.
+```
+0
+3
+459697040000
+```
+Base 16 (hexadecimal literal) -->  begins with “0x” or “0X”, followed by a string of hexadecimal digits.
+```
+0x24FA
+0Xff2a
+```
+Base 8 (octal literal) --> begins with the digit 0 and is followed by a sequence of digits, each between 0 and 7. Some implementations support octal literals and some do not, never declare a decimal literal with strating zero. In the strict mode of ECMAScript 5, octal literals are explicitly forbidden.
+
+Floating-Point Literals --> numbers with decimal part or exponential notation (e).
+Exponential notation --> represents the real number multiplied by 10 to the power of the exponent.
+```
+3.14
+2345.789
+.333333333333333333
+6.02e23        
+10e10 // 10 ^ 10
+```
+---------------
+Arithmetic in JavaScript
+---------------
+- Does not raise errors in cases of overflow, underflow, or division by zero. 
+- Overflow --> result of a numeric operation is larger than the largest repre- sentable number. (Infinity ot -Infinity)
+- Underflow --> result of a numeric operation is closer to zero than the smallest representable number. (0 or -0)
+Some examples:
+```
+Infinity                    // A read/write variable initialized to Infinity. 
+Number.POSITIVE_INFINITY    // Same value, read-only.
+1/0                         // This is also the same value.
+Number.MAX_VALUE + 1        // This also evaluates to Infinity.
+Number.NEGATIVE_INFINITY    // These expressions are negative infinity. 
+-Infinity
+-1/0 
+-Number.MAX_VALUE - 1
+NaN                         // A read/write variable initialized to NaN. 
+Number.NaN                  // A read-only property holding the same value. 
+0/0                         // Evaluates to NaN.
+Number.MIN_VALUE/2          // Underflow: evaluates to 0 
+-Number.MIN_VALUE/2         // Negative zero
+-1/Infinity                 // Also negative 0 
+-0
+```
+- NaN --> it does not compare equal to any other value, including itself 
+```
+NaN === NaN --> false
+x = NaN; x === NaN --> false
+NaN !== NaN --> true
+isNaN(NaN) --> true
+isFinite(Number.MAX_VALUE) --> true
+isFinite(Number.POSITIVE_INFINITY) --> false
+```
+- Negative zero --> is unusual but if we compare negative with positive zero are the same but if we divide them and compare them, it will not:
+```
+var zero = 0;         // Regular zero 
+var negz = -0;        // Negative zero
+zero === negz         // => true: zero and negative zero are equal 
+1/zero === 1/negz     // => false: infinity and -infinity are not equal
+```
+------------------
+Binary Flotating Point Errors
+------------------
+- When you’re working with real numbers in JavaScript, the representation of the number will often be an approximation of the actual number.
+This is because the flotating point representation IEEE-754, if we compare it with a fixed size representation (32 bits integer and 32 bits decimal);
+- Floating-point representation allows for a larger range of values by using a combination of exponent and mantissa, with less bits space. 
+- Fixed-width representation with separate integer and decimal parts can provide exact precision for a specific number of decimal places.
+The flotating-point representation, more bits we dedicate to it, more precission will have. Types of precision:
+- Half precision (16 bits)
+- Signle precision (32 bits)
+- Double precision (64 bits)
+- Quadruple precision (128 bits)
+- Octuple precision (256 bits)
