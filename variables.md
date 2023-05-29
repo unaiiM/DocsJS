@@ -217,3 +217,6 @@ The flotating-point representation, more bits we dedicate to it, more precission
 - Double precision (64 bits)
 - Quadruple precision (128 bits)
 - Octuple precision (256 bits)
+```
+
+```
