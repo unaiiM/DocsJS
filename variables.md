@@ -22,6 +22,9 @@ const declarations always need an initializer, because they forbid any kind of a
 Variable scope
 ------------------
 The scope is the current context of execution in which variables are "visible" or can be referenced.
+Then we can say:
+ - Context --> is the object where a proprety begin defined. We can use "this" keyword to access the context of a function.
+ - Scope --> is the accessibility that a context has to other references (functions, variables, etc).
 
 - Global scope: The default scope for all code running in script mode.
 - Module scope: The scope for code running in module mode.
