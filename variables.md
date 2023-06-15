@@ -111,7 +111,7 @@ Types, Values, and Variables
 ------------------
 Variables --> defines a symbolic name for a value and allows the value to be referred to by name. 
 
-Values --> 
+Values --> a way to represent a data type.
 
 Types --> values that can be represented and manipulated in a programming language are known, fundamental characteristics of a programming language is the set of types it supports.
 - JavaScript types can be divided into two categories: primitive types and object types.
